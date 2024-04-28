@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تورلی</title>
+
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    @font-face {
+      font-family: 'bbardiya';
+      src: url(./assets/fonts/BTitrBold.eot);
+      src: url(./assets/fonts/BTitrBold.ttf);
+      src: url(./assets/fonts/BTitrBold.woff);
+    }
+    p{
+      font-family: 'bbardiya';
+    }
+    
+    li{
+      font-family: 'bbardiya';
+      font-size:x-large;
+    }
+
+    button{
+      font-family: 'bbardiya';
+
+    }
+
+    h2{
+      font-family: 'bbardiya';
+
+    }
+  </style>
+ 
+</head>
+
+<body id="top" dir="rtl">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header style="position: fixed; background-color:rgba(5, 5, 5, 0.651)">
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+        
+          <div class="wrapper">
+            <p class="helpline-title">ارتباط با ما</p>
+
+            <p class="helpline-number">3322356  </p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="Tourly logo">
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom" >
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list" >
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>خانه</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link> درباره ما</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>مقصد ها</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>تورها</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>گالری تصاویر</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link> ارتباط با ما</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary"> رزرو میکنم</button>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title" style="font-family: 'bbardiya';  ">سفر به دور دنیا</h2>
+
+          <p class="hero-text" style="font-family: 'bbardiya';  ">
+           ما در کنار شما هستیم تا به شما کمک کنیم بهترین مقصد را برای سفر خود را پیدا کنید و از سفر خود لذت ببرید
+          </p>
+
+          <div class="btn-group" style="font-family: 'bbardiya';  ">
+            <button class="btn btn-primary"> دیدن اطلاعات بیشتر</button>
+
+            <button class="btn btn-secondary" style="font-family: 'bbardiya';  "> رزرو کردن</button>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      <section class="tour-search">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label" style="font-family: 'bbardiya';  "> مقصد</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="مقصد خود را وارد کنید"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label" style="font-family: 'bbardiya';  ">حداکثر قیمت</label>
+
+              <input type="number" name="people" id="people" required placeholder="قیمت مورد نظر" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label" style="font-family: 'bbardiya';  ">روز شروع</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label" style="font-family: 'bbardiya';  ">روز پایان</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary" style="font-family: 'bbardiya';  ">جست و جو کن</button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle" style="font-family: 'bbardiya';  ">دور دنیا</p>
+
+          <h2 class="h2 section-title" style="font-family: 'bbardiya';  ">مقصد های پر طرفدار</h2>
+
+          <p class="section-text" style="font-family: 'bbardiya';  ">
+            
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle" style="font-family: 'bbardiya';  ">
+                    <a href="#">ایتالیا</a>
+                  </p>
+
+                  <h3 class="h3 card-title" style="font-family: 'bbardiya';  ">
+                    <a href="#">سان میگوئل</a>
+                  </h3>
+
+                  <p class="card-text" style="font-family: 'bbardiya';  ">
+                    شهری در کشور آرژانتین، استان بوئنوس آیرس است که در سال ۲۰۰۹ میلادی، حدود ۱۵۷٬۵۳۲ نفر جمعیت داشته است                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle" style="font-family: 'bbardiya';  ">
+                    <a href="#">دبی</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">برج خلیفه</a>
+                  </h3>
+
+                  <p class="card-text">
+                    آسمان‌خراشی در شهر دبی در امارات متحدهٔ عربی است. این برج با ۱۶۳ طبقهٔ قابل استفاده و ۸۲۸ متر بلندی
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">ژاپن</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#"> کین‌کاکوجی</a>
+                  </h3>
+
+                  <p class="card-text">
+                    یک معبد بودایی در ژاپن وابسته به فرقهٔ ذن در کیوتو، ژاپن است. این بنا یکی از معروف‌ترین بناهای ژاپن است                    </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">دیدن بقیه</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle" style="font-family: 'bbardiya';  ">تورها</p>
+
+          <h2 class="h2 section-title" style="font-family: 'bbardiya';  ">تور های اخیر</h2>
+
+          <p class="section-text">
+           
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title"  style="font-family: 'bbardiya';  ">تجربه بهترین تعطیلات تابستانی در استرالیا</h3>
+
+                  <p class="card-text">
+                    صخره معلق، ویکتوریا 
+                    صخره معلق از فعالیت‌های آتشفشانی شکل گرفته است که اگر به نوک آن بروید قادر هستید منظره‌ فوق‌العاده‌ای را با چشمان خود نظاره‌گر باشید. این صخره یکی از جاهای دیدنی استرالیا محسوب می‌شود که قدمت زیادی دارد و نقش و نگار‌هایی که روی آن است،
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">6 سپتامبر</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">10 نفر</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">استرالیا</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">25 امتیاز</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    50000000 ت 
+                    <span>به ازای هر نفر</span>
+                  </p>
+
+                  <button class="btn btn-secondary"> رزرو</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title"  style="font-family: 'bbardiya';  ">یک تور دوستانه به ایتالیا</h3>
+
+                  <p class="card-text">
+                    دریاچه پراگز (دریاچه برایز)
+                    دریاچه پراگز، پرایز یا براس یکی از جاذبه های گردشگری برایز در ایتالیا است که به‌عنوان بزرگترین دریاچه کوهستانی تیرول جنوبی شناخته می‌شود. در حالی که گردشگران زیادی در اطراف دریاچه قدم می‌زنند و از مناظر زیبای آن لذت می‌برند، عده‌ای استراحت در ساحل آفتابی یا آب‌تنی در دریاچه را ترجیح می‌دهند
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">3 اوریل</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">50 نفر</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">ایتالیا</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">20 امتیاز</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    30000000 ت
+                    <span>به ازای هر نفر</span>
+                  </p>
+
+                  <button class="btn btn-secondary"> رزرو</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title"  style="font-family: 'bbardiya';  "> آخر هفته خود را در مکانی مقدس سپری کنید</h3>
+
+                  <p class="card-text">
+                   
+                   مسجد کبود (سلطان احمد) استانبول
+                   مسجد کبود یا سلطان احمد، یکی از مساجد تاریخی استانبول و از بزرگ‌ترین عبادتگاه‌های این شهر است. سلطان احمد اول، پس از شکست در برابر ایرانیان، برای بازگرداندن قدرت خود، این مسجد زیبا را در کنار ایا صوفیه ساخت.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">6 نوامبر</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">15 نفر</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">ترکیه</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">40 امتیاز</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    80000000 ت
+                    <span>به ازای هر نفر</span>
+                  </p>
+
+                  <button class="btn btn-secondary"> رزرو</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary"> دیدن بقیه</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle" style="font-family: 'bbardiya';  "> گالری تصاویر</p>
+
+          <h2 class="h2 section-title" style="font-family: 'bbardiya';  ">تصاویر گرفته شده از تورهای اخیر</h2>
+
+          <p class="section-text">
+           
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-1.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-3.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-4.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/gallery-5.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+     
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer id="contact" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a>
+
+          <p class="footer-text" style="font-family: 'bbardiya';  ">
+          تورلی یک بستر عالی برای پیدا کردن تور های مد نظر شماست 
+          <br>
+          سرمایه ما اعتماد مشتری است پس اعتماد کنید .....
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title"> راه های ارتباطی</h4>
+
+          
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">3322356</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">turly@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>ایران-تهران-پاسداران</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            شما عزیزان میتوانید با عضویت در خبرنامه از جدیدترین خبر ها مطلع شوید
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="ایمیل خود را وارد کنید" required>
+
+            <button type="submit" class="btn btn-secondary">عضویت</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright" style="margin-left: 370px;">
+           <a href=""> </a> کلیه اطلاعات متعلق به تورلی  است
+        </p>
+
+        
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
